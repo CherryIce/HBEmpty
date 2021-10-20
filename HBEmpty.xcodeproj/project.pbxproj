@@ -93,6 +93,7 @@
 		4A8F207E271D48BA00A249B6 = {
 			isa = PBXGroup;
 			children = (
+				4A8F20C2271D491A00A249B6 /* HBEmptyClass */,
 				4A8F2089271D48BA00A249B6 /* HBEmpty */,
 				4A8F20A5271D48C100A249B6 /* HBEmptyTests */,
 				4A8F20B0271D48C100A249B6 /* HBEmptyUITests */,
@@ -113,7 +114,6 @@
 		4A8F2089271D48BA00A249B6 /* HBEmpty */ = {
 			isa = PBXGroup;
 			children = (
-				4A8F20C2271D491A00A249B6 /* HBEmptyClass */,
 				4A8F208A271D48BA00A249B6 /* AppDelegate.h */,
 				4A8F208B271D48BA00A249B6 /* AppDelegate.m */,
 				4A8F208D271D48BA00A249B6 /* SceneDelegate.h */,
