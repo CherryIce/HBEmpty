@@ -8,7 +8,6 @@
      spec.summary      = 'empty view'
      spec.source       = { :git => 'https://github.com/CherryIce/HBEmpty.git', :tag => 'v0.0.1' }
      spec.source_files = 'HBEmptyClass/**'
-     spec.require_arc  = true
      spec.frameworks   = "Foundation", "UIKit"
      spec.ios.deployment_target = "9.0"
  end
