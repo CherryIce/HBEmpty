@@ -7,4 +7,5 @@
      spec.summary      = 'empty view'
      spec.source       = { :git => 'https://github.com/CherryIce/HBEmpty.git', :tag => 'v3.1.0' }
      spec.source_files = 'HBEmptyClass/**'
+     spec.frameworks = "Foundation", "UIKit"
  end
