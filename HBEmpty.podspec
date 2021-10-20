@@ -6,5 +6,5 @@
      spec.authors      = { 'CherryIce' => 'a13530836164@163.com' }
      spec.summary      = 'empty view'
      spec.source       = { :git => 'https://github.com/CherryIce/HBEmpty.git', :tag => 'v3.1.0' }
-     spec.source_files = 'HBEmpty/HBEmptyClass/**'
+     spec.source_files = 'HBEmptyClass/**'
  end
