@@ -6,7 +6,7 @@
      spec.platform     = :ios,"9.0" 
      spec.authors      = { "CherryIce" => "a13530836164@163.com" }
      spec.summary      = "empty view"
-     spec.source       = { :git => "https://github.com/CherryIce/HBEmpty.git", :tag => "v0.0.2" }
+     spec.source       = { :git => "https://github.com/CherryIce/HBEmpty.git", :tag => "0.0.2" }
      spec.source_files = "HBEmptyClass/**"
      spec.frameworks   = "Foundation", "UIKit"
  end
