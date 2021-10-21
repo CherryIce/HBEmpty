@@ -109,19 +109,6 @@
     return nil;
 }
 
-- (UIView *)makeNoMoreDataView {
-    if (self.dataArray.count == 20) {
-        UIView * v = [self creatViewWithHeight:30];
-        UILabel * label = [[UILabel alloc] initWithFrame:v.bounds];
-        label.text = @"--- no more data ---";
-        label.textAlignment = NSTextAlignmentCenter;
-        label.textColor = [UIColor lightGrayColor];
-        [v addSubview:label];
-        return v;
-    }
-    return nil;
-}
-
 - (BOOL)enableScrollWhenPlaceHolderViewShowing{
     return YES;
 }

@@ -16,9 +16,6 @@
 /**占位图是否放在了tablefooterview上面*/
 @property (nonatomic, assign) BOOL isAddFooter;
 
-/**no more data*/
-@property (nonatomic, strong) UIView *noMoreDataView;
-
 @end
 
 @implementation UITableView (HBEmpty)
@@ -58,7 +55,6 @@
 - (void)hb_reloadData {
     [self hb_reloadData];
     [self checkEmpty];
-    [self checkNoMoreData];
 }
 
 - (void)checkEmpty {
@@ -166,29 +162,6 @@
     }
 }
 
-- (void) checkNoMoreData {
-    // 移除
-    [self.noMoreDataView removeFromSuperview];
-    self.noMoreDataView = nil;
-    // 获取
-    if ([self respondsToSelector:@selector(makeNoMoreDataView)]) {
-        self.noMoreDataView = [self performSelector:@selector(makeNoMoreDataView)];
-    }
-    else if ( [self.delegate respondsToSelector:@selector(makeNoMoreDataView)]) {
-        self.noMoreDataView = [self.delegate performSelector:@selector(makeNoMoreDataView)];
-    }
-    if (self.noMoreDataView) {
-        CGFloat h = self.contentSize.height;
-        self.contentSize = CGSizeMake(self.frame.origin.x, h + CGRectGetHeight(self.noMoreDataView.frame));
-        self.noMoreDataView.frame =
-        CGRectMake(CGRectGetMinX(self.noMoreDataView.frame),
-                   h,
-                   CGRectGetWidth(self.noMoreDataView.frame),
-                   CGRectGetHeight(self.noMoreDataView.frame));
-        [self addSubview:self.noMoreDataView];
-    }
-}
-
 @end
 
 @interface  UICollectionView()
@@ -228,7 +201,6 @@
 - (void)hb_reloadData {
     [self hb_reloadData];
     [self checkEmpty];
-    [self checkNoMoreData];
 }
 
 - (void)checkEmpty {
@@ -273,29 +245,6 @@
         self.placeHolderView = nil;
         // 设置TableView 可滚动
         self.scrollEnabled = YES;
-    }
-}
-
-- (void) checkNoMoreData {
-    // 移除
-    [self.noMoreDataView removeFromSuperview];
-    self.noMoreDataView = nil;
-    // 获取
-    if ([self respondsToSelector:@selector(makeNoMoreDataView)]) {
-        self.noMoreDataView = [self performSelector:@selector(makeNoMoreDataView)];
-    }
-    else if ( [self.delegate respondsToSelector:@selector(makeNoMoreDataView)]) {
-        self.noMoreDataView = [self.delegate performSelector:@selector(makeNoMoreDataView)];
-    }
-    if (self.noMoreDataView) {
-        CGFloat h = self.contentSize.height;
-        self.contentSize = CGSizeMake(self.frame.origin.x, h + CGRectGetHeight(self.noMoreDataView.frame));
-        self.noMoreDataView.frame =
-        CGRectMake(CGRectGetMinX(self.noMoreDataView.frame),
-                   h,
-                   CGRectGetWidth(self.noMoreDataView.frame),
-                   CGRectGetHeight(self.noMoreDataView.frame));
-        [self addSubview:self.noMoreDataView];
     }
 }
 

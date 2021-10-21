@@ -18,12 +18,6 @@
  */
 - (UIView *)makePlaceHolderView;
 
-/**
- 没有更多数据了
- @return 没有更多数据图
- */
-- (UIView *)makeNoMoreDataView;
-
 @optional
 
 /**

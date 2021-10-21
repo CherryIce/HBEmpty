@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -60,20 +61,31 @@
                                     <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J0Z-Af-Iti"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8i-Av-NMg">
+                                <rect key="frame" x="100" y="504" width="214" height="34"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="collectionClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xnC-on-q81"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="we1-Qy-NJ6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="14T-dA-nIT"/>
+                            <constraint firstItem="u8i-Av-NMg" firstAttribute="top" secondItem="we1-Qy-NJ6" secondAttribute="bottom" constant="50" id="5LE-Du-g0p"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aSb-fa-pgu" secondAttribute="trailing" constant="100" id="CKW-y5-Uhd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yq1-CR-w1T" secondAttribute="trailing" constant="100" id="Dqx-Ug-qc1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aeU-EF-Do3" secondAttribute="trailing" constant="100" id="Fus-E3-uEx"/>
                             <constraint firstItem="we1-Qy-NJ6" firstAttribute="top" secondItem="Yq1-CR-w1T" secondAttribute="bottom" constant="50" id="Gyg-Sz-ywM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u8i-Av-NMg" secondAttribute="trailing" constant="100" id="JXb-KB-TmJ"/>
                             <constraint firstItem="aSb-fa-pgu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="M7c-kW-th3"/>
                             <constraint firstItem="Yq1-CR-w1T" firstAttribute="top" secondItem="aeU-EF-Do3" secondAttribute="bottom" constant="50" id="Q6Z-Ur-kjI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="we1-Qy-NJ6" secondAttribute="trailing" constant="100" id="gbV-6R-oVI"/>
                             <constraint firstItem="Yq1-CR-w1T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="giK-fu-MSY"/>
                             <constraint firstItem="aeU-EF-Do3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="jwv-XT-43L"/>
+                            <constraint firstItem="u8i-Av-NMg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="nWs-iB-q0w"/>
                             <constraint firstItem="aSb-fa-pgu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="u26-5m-cIX"/>
                             <constraint firstItem="aeU-EF-Do3" firstAttribute="top" secondItem="aSb-fa-pgu" secondAttribute="bottom" constant="50" id="vE2-ab-ZSS"/>
                         </constraints>
